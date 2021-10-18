@@ -17,7 +17,7 @@ public class Ejercicio8 {
 		// TODO Auto-generated method stub
 		
 		Scanner entrada=new Scanner(System.in);
-		System.out.println("Introduce tu nommbre");
+		System.out.println("Introduce tu nombre");
 		String nombre=entrada.nextLine();
 		System.out.println("Introduce tu apellido");
 		String apellido=entrada.nextLine();
@@ -26,10 +26,7 @@ public class Ejercicio8 {
 		System.out.println("Introduce tu direccion");
 		String direccion=entrada.nextLine();
 		System.out.println("Ciudad");
-		String ciudad=entrada.nextLine();
-		
-		System.out.println(ciudad+"-"+direccion+"-"+edad+"-"+(nombre+" "+apellido));
-		
+		String ciudad=entrada.nextLine();		
+		System.out.println(ciudad+"-"+direccion+"-"+edad+"-"+(nombre+" "+apellido));		
 	}
-
 }

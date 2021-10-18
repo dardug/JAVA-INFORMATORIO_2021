@@ -10,22 +10,14 @@ public class Ejercicio5 {
 	public static void main(String[] args) {
 		
 		Scanner entrada=new Scanner(System.in);
-		System.out.println("Introduce uel exponente");
-		int exponente=entrada.nextInt();
-		System.out.println("Introduce la base");
-		int base=entrada.nextInt();
-		int resultado=1;
-		for(int i=0;i<exponente;i ++ ) {
-			
-			resultado*=base;	
-			System.out.println(resultado);			
-			
+		System.out.println("Introduce un numero");
+		int numero1=entrada.nextInt();
+		System.out.println("Introduce otro numero");
+		int numero2=entrada.nextInt();
+		int resultado=0;
+		for(int i=0;i<numero1;i ++ ) {			
+			resultado+=numero2;										
 		}
-		System.out.println("El numero "+ base + " elevado al "+ exponente+ " es igual a "+ resultado);
-		
-		
-		
-
+		System.out.println("El resultado de multiplicar "+numero1+" por "+numero2+ " es igual a "+ resultado);
 	}
-
 }

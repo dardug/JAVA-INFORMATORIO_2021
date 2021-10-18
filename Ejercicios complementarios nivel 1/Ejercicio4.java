@@ -10,13 +10,10 @@ public class Ejercicio4 {
 		double resultado=1;
 		Scanner entrada=new Scanner(System.in);
 		System.out.println("Introduce un numero entero");
-		double numero=entrada.nextInt();
-		
-		for(double i=numero;i>0;i--) {
-			
+		double numero=entrada.nextInt();		
+		for(double i=numero;i>0;i--) {			
 		resultado=resultado*i;
 		}
-		System.out.println("El factorial de "+numero+"es igual a "+resultado);
-	}
-	
+		System.out.println("El factorial de "+numero+" es igual a "+resultado);
+	}	
 }
