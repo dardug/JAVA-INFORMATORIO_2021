@@ -20,25 +20,25 @@ public class Ejercicio7 {
 		System.out.println("Ingrese un numero mayor al anterior: ");
 		int numero2=input.nextInt();
 		if (numero2>numero1) {		
-		System.out.println(Arrays.toString(fizzBuzzFuncion(numero1,numero2).toArray()));
-		
+		System.out.println(Arrays.toString(fizzBuzzFuncion(numero1,numero2).toArray()));	
 		}
+		input.close();
 	}
 
 	public static List<String> fizzBuzzFuncion(int x, int y){
 		List<String> cadena = new ArrayList<>();
 		for (int i=x; i<y; i++){
-			if (i%2==0){
-		    cadena.add("Fizz");
-		     } else if (i%3==0) {
-		     cadena.add("Buzz");
-		     } else if (i%2==0 && i%3==0){
-		     cadena.add("FizzBuzz");
-		     } else {
-		     cadena.add(String.valueOf(i));
-		     }
-	}
-		 return cadena;
+			if (i%2==0 & i%3==0){
+			cadena.add("FizzBuzz");
+		 	} else if (i%3==0) {
+			cadena.add("Buzz");
+			} else if (i%2==0){
+			cadena.add("Fizz");
+			} else {
+			cadena.add(String.valueOf(i));
+			}
+		}
+		return cadena;
 	}
 		
 }
